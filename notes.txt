@@ -1,0 +1,29 @@
+// ----------------------------------------------------------------------------
+// MySQL
+// ----------------------------------------------------------------------------
+
+### Installation ###
+
+https://dev.mysql.com/doc/refman/8.0/en/macos-installation.html
+- https://dev.mysql.com/doc/refman/8.0/en/macos-installation-notes.html
+- https://dev.mysql.com/doc/refman/8.0/en/macos-installation-pkg.html
+  - Download "macOS 13 (ARM, 64-bit), DMG Archive")
+  - Choose "Use Strong Password Encryption"
+  - Once after installation, update terminal path:
+    - "sudo nano /etc/paths"
+    - add the MySQL install bin directory (e.g. "/usr/local/mysql/bin") at the end
+    - reopen a terminal shell
+    - "mysql -uroot -p<PASSWORD>"
+
+### Adding and Deleting a Aser
+
+https://dev.mysql.com/doc/refman/8.0/en/create-user.html
+
+CREATE USER 'morten' IDENTIFIED BY 'mypassword'; -- leave empty password if no password
+DROP USER 'morten';
+
+### Granting privileges
+
+https://dev.mysql.com/doc/refman/8.0/en/grant.html
+
+GRANT ALL ON tradingdb.* TO 'morten';
