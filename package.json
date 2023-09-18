@@ -1,0 +1,14 @@
+{
+  "name": "ntrading",
+  "version": "1.0.0",
+  "description": "A collection of algorithms, frameworks and datasets for financial trading.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Morten Helles",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
